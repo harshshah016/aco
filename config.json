@@ -2,22 +2,29 @@
   "public": {
     "default": {
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/5KCWo3ZqW6fofnGGmm4izR/graphql",
-      "adobe-commerce-optimizer": true,
       "headers": {
         "cs": {
-          "ac-view-id": "5d1e0c47-5db4-4ad0-8e44-117398613bbd",
-          "AC-Environment-Id": "5KCWo3ZqW6fofnGGmm4izR",
+          "AC-View-ID": "5d1e0c47-5db4-4ad0-8e44-117398613bbd",
+          "AC-Price-Book-ID": "5KCWo3ZqW6fofnGGmm4izR"
         }
       },
+      "commerce-b2b-enabled": false,
+      "commerce-companies-enabled": false,
+      "commerce-assets-enabled": true,
+      "adobe-commerce-optimizer": true,
       "analytics": {
-        "environment-id": "5KCWo3ZqW6fofnGGmm4izR",
-        "environment": "Testing",
-        "store-url": "https://main--aco--harshshah016.aem.live/",
         "base-currency-code": "USD",
+        "environment": "Testing",
+        "environment-id": "5KCWo3ZqW6fofnGGmm4izR",
+        "locale": "en-US",
+        "store-url": "{{STORE_URL}}",
         "store-view-currency-code": "USD",
-        "storefront-template": "Other",
-        "view-id": "5d1e0c47-5db4-4ad0-8e44-117398613bbd",
-        "locale": "en-US"
+        "view-id": "5d1e0c47-5db4-4ad0-8e44-117398613bbd"
+      },
+      "plugins": {
+        "picker": {
+          "rootCategory": "2"
+        }
       }
     }
   }
